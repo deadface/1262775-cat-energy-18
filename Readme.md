@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [max max](https://up.htmlacademy.ru/adaptive/18/user/1262775).
-* Наставник: `Неизвестно`.
+* Наставник: `Михаил Колотович`.
 
 ---
 
