@@ -17,8 +17,54 @@
 
 .life-story__description {
   margin: 35px 0;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.3em;
-  color: @almost-black;
+  color: @grey-dark;
+}
+
+.life-story__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.life-story__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid @grey-darker;
+  border-radius: 3px;
+  font-size: 24px;
+  width: calc(50% - 20px);
+  margin-bottom: 15px;
+  padding-top: 8px;
+  justify-content: flex-end;
+
+  &_note {
+    border: none;
+    font-weight: 100;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 0.9em;
+    text-transform: lowercase;
+    color: @grey-dark;
+    background-color: @grey;
+    position: relative;
+    width: min-content;
+    margin-bottom: -13px;
+    padding: 0 15px;
+  }
+}
+
+.life-story__cost {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
 }

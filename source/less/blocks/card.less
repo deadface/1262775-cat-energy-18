@@ -10,31 +10,23 @@
   background-color: @grey;
 }
 
-.card__title {
-  position: relative;
+.card__header {
   display: flex;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 38px;
-  text-transform: uppercase;
-  color: @almost-black;
+  align-items: center;
+  flex-direction: row;
+}
 
-  &_ellipse {
-    &::before {
-      content: "";
-      position: static;
-      width: 50px;
-      height: 50px;
-      margin-right: 20px;
-      margin-top: -3px;
-      background-color: @green;
-      border-radius: 50%;
-    }
-  }
+.card__avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: @green;
+  border-radius: 50%;
 
   &_sitting-cat {
-    &::before {
+    &::after {
+      content: "";
+      display: block;
       width: 35px;
       height: 49px;
       margin-top: -3px;
@@ -45,7 +37,9 @@
   }
 
   &_walking-cat {
-    &::before {
+    &::after {
+      content: "";
+      display: block;
       width: 67px;
       height: 28px;
       margin-top: 11px;
@@ -56,24 +50,35 @@
   }
 }
 
+.card__title {
+  position: relative;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: @almost-black;
+}
+
 .card__body {
   width: 100%;
   margin: 22px 0;
   color: @grey-dark;
+  font-family: "Arial", sans-serif;
 }
 
 .card__separator {
   width: 100%;
   padding-right: 44px;
   border: none;
-  color: @grey-d9;
-  background-color: @grey-d9;
+  color: @grey-darker;
+  background-color: @grey-darker;
   height: 2px;
 }
 
 .card__footer {
   position: relative;
-  width: 55%;
+  width: 100%;
   font-size: 16px;
   line-height: 1em;
   text-transform: uppercase;
@@ -89,14 +94,14 @@
       position: absolute;
       display: block;
       top: 24px;
-      right: 0;
-      width: 23px;
+      left: 105px;
+      width: 20px;
       height: 11px;
       background-image: url("../img/icon-right-arrow-verylong.svg");
       background-repeat: no-repeat;
-      background-size: 25px 11px;
+      background-size: 20px 11px;
       background-position: right center;
-      transition: all 0.3s ease;
+      //transition: all 0.3s ease;
     }
   }
 }
